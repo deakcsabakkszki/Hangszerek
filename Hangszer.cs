@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hangszerek
 {
-    internal class Hangszer
+    public class Hangszer
     {
         protected string nev;
         private string anyag;
@@ -19,6 +19,12 @@ namespace Hangszerek
         public void Info()
         {
             Console.WriteLine($"A hangszer neve: {nev}, anyaga: {anyag}");
+        }
+        public bool hasonlit(Hangszer h2)
+        {
+            if(this.nev==h2.nev)
+                return true;
+            else return false;
         }
     }
 }
