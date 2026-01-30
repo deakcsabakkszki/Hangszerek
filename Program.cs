@@ -17,8 +17,10 @@
             gy.Hozzaad2(g);
             gy.Hozzaad2(new Hangszer("fuvola", "fém"));
             gy.Listaz(null);
-            
-
+            gy.Hozzaad(new Hangszer("gitár", "fém"));
+            gy.Listaz("fém");
+            Console.WriteLine("------------------");
+            gy.Info();
 
         }
     }

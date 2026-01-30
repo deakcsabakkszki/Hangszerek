@@ -31,5 +31,12 @@ namespace Hangszerek
         {
             return this.nev==((Hangszer)obj).nev;
         }
+
+        public bool anyagegyezes(string h3)
+        {
+            if (this.anyag == h3)
+                return true;
+            else return false;
+        }
     }
 }

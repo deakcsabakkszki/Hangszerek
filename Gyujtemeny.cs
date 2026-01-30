@@ -35,9 +35,23 @@ namespace Hangszerek
 
         public void Listaz(string anyagSzuro)
         {
-            foreach (var i in Hangszerek)
-                i.Info();
+            if (anyagSzuro != null)
+                foreach (var i in Hangszerek)
+                {
+                    if(i.anyagegyezes(anyagSzuro))
+                    { i.Info(); }
+                }
+                else
+                        foreach (var i in Hangszerek)
+                            i.Info();
 
+        }
+        public void Info()
+        {
+            foreach (var i in Hangszerek)
+            {
+                i.Info();
+            }
         }
 
     }
