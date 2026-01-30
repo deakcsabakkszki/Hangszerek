@@ -28,5 +28,17 @@ namespace Hangszerek
 
 
         }
+        public void Hozzaad2(Hangszer h) { 
+            if(!Hangszerek.Contains(h))
+                Hangszerek.Add(h);
+        }
+
+        public void Listaz(string anyagSzuro)
+        {
+            foreach (var i in Hangszerek)
+                i.Info();
+
+        }
+
     }
 }

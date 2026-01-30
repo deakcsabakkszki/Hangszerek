@@ -26,5 +26,10 @@ namespace Hangszerek
                 return true;
             else return false;
         }
+
+        public override bool Equals(object? obj)
+        {
+            return this.nev==((Hangszer)obj).nev;
+        }
     }
 }
